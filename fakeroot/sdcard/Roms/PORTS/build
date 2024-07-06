@@ -1,0 +1,7 @@
+#!/bin/bash
+(
+cd /src
+go build ./cmd/favsort
+) || exit $?
+mv /src/favsort ./
+

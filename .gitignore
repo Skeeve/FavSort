@@ -1,0 +1,5 @@
+src/.cache
+go.sum
+favsort
+fakeroot/vendor/bin/arcade-plus.csv
+*.zip

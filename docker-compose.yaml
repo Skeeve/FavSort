@@ -1,0 +1,23 @@
+services:
+  godev:
+    image: golang
+    command: /bin/bash
+    tty: true
+    environment:
+      GOCACHE: /src/.cache
+    volumes:
+    - type: bind
+      source: ./src
+      target: /src
+    # Below bind is for testing purposes
+    # It binds the `fakeroot` directory
+    # under `/mnt` so that favsort can be
+    # run in a container.
+    # Not that you need to provide your own
+    # `/mnt/vendor/bin/arcade-plus.csv`
+    # for this to work as I do not want to
+    # distribute it.
+    - type: bind
+      source: ./fakeroot
+      target: /mnt
+    working_dir: /src

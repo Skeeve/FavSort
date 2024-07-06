@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+version="$( grep 'const VERSION' src/cmd/favsort/main.go | cut -d'"' -f2 | tr " " "-" )"
+cd src
+docker build --tag temporary --output out .
+mv out/FavSort.zip "../$version.zip"
+rm -rf out
+cd ..

@@ -4,10 +4,15 @@
 
 I'm pretty confident it will run as well on the "Plus" and "SP", but couldn't test that.
 
+FavSort will run at least with Stock OS from 1.1.0 to 1.1.4.
+It's also compatible with cbepx-me mods for these OSs.
+
+I'd be happy to hear from users of Tom's mods.
+
 **NOTE** Some games, especially Arcade ones, on the Anbernic will display another name than the filename.
 Sorting in this case is done by the english name of the game even though you might see the name displayed in another language.
 The full (english) names are taken from `/mnt/vendor/bin/arcade-plus.csv`.
-The location of that file is defined in [favsort.sh](favsort.sh).
+The location of that file is defined in [favsort.yaml](favsort.yaml).
 
 ## Recommendation
 
@@ -29,7 +34,7 @@ Now you have this `Readme.md` file, a file `build-id.txt`, and the file `Install
 The `build-id.txt` File contains the "build id" of the executable.
 When installing on the Anbernic device, the Version and build id will be displayed for a few seconds.
 You can compare the displayed build id with the one in the file.
-If the time is to short, you can always recall this screen later.
+If the time is too short, you can always recall this screen later.
 
 Copy the `Install Favsort.sh` File to the `Roms/PORTS` directory of the sdcard (TF1 or TF2).
 

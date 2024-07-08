@@ -4,6 +4,11 @@
 
 I'm pretty confident it will run as well on the "Plus" and "SP", but couldn't test that.
 
+FavSort will run at least with Stock OS from 1.1.0 to 1.1.4.
+It's also compatible with cbepx-me mods for these OSs.
+
+I'd be happy to hear from users of Tom's mods.
+
 For more information please check the [Readme packaged with the binary](src/artifacts/Readme.md).
 
 ## Installation

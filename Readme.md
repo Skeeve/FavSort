@@ -4,7 +4,7 @@
 
 I'm pretty confident it will run as well on the "Plus" and "SP", but couldn't test that.
 
-For more information please check the [Readme packaged with the binary](favsort/artifacts/Readme.md).
+For more information please check the [Readme packaged with the binary](src/artifacts/Readme.md).
 
 ## Contributing
 

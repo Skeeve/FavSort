@@ -1,1 +1,13 @@
-++ sort Favorites ++.sh
+#!/bin/bash -e
+sortEntry='++ sort Favorites ++'
+dir="$(cd "$(dirname "$0")"; pwd)"
+ports="$( dirname "$dir" )"
+
+subtitle="/tmp/$$.vtt"
+version="$( "$dir/favsort" --version )"
+printf "WEBVTT\n\n00:00:00.000 --> 99:59:59.999\n%s\n" "$version" > "$subtitle"
+
+pkill -f mpv || true
+mpv --image-display-duration=10 --really-quiet --fs --sub-file="$subtitle" --video-zoom=-1 "$ports/Imgs/$sortEntry.png"
+pkill -f mpv || true
+rm "$subtitle"

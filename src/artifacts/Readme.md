@@ -18,7 +18,8 @@ In case there is a wrong entry, the device will reboot.
 Figure out, which entry is the faulty one.
 After installation, the entry can be removed as described below.
 
-**Precaution:** If you want to back up your favorites, copy `/mnt/data/misc/.favorites` using `File Manager`.
+**Precaution:** You may want to back up your favorites.
+Copy `/mnt/data/misc/.favorites` using `File Manager`.
 
 ## Installation
 
@@ -102,7 +103,11 @@ These are the flags you can use:
 
 - --repair (-r) \
   Don't sort, but just repair.
-  Fixes linenumbers
+  Fixes linenumbers and checksum.
+- --append \
+  Don't sort, but just repair and append the favsort entry.
+- --remove \
+  Don't sort, but just repair and remove the favsort entry.
 - --tsv (-t) \
   Just print out the sorted Game names and all its information.
 - --short (-s) \
@@ -147,3 +152,5 @@ Many thanks to the reddit user [AnonymousTokenus](https://www.reddit.com/user/An
 - beta-testing
 - helping me figuring out the meaning of the fields in the favorites file
 - and for challenging my programming skills
+
+Also many thanks to discord user @ rymsar for finding a critical bug just in time before I wanted to publish FavSort.

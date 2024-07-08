@@ -13,7 +13,7 @@
     tail +$archiveAt "$me" | base64 -d | tar $setOwner -xzf -
 
     # Initialize
-    "$dir/FavSort/install"
+    "$dir/FavSort/append"
 
     # Show Version information
     "$dir/FavSort/version"

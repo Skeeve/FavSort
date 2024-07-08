@@ -25,11 +25,10 @@ ENV CGO_ENABLED=0
 
 RUN  go build ./cmd/"$SOURCE" \
  && cd artifacts \
- && mv "Imgs/$SOURCE.png" "Imgs/$TARGET.png" \
- && mv ../"$SOURCE" "FavSort/$TARGET" \
- && ../acrc "FavSort/$TARGET" > build-id.txt \
- && mv "$SOURCE.sh" "FavSort/$TARGET.sh" \
- && ln -s "FavSort/$TARGET.sh" "$TARGET.sh" \
+ && cp "$SOURCE.png" "Imgs/$TARGET.png" \
+ && mv ../"$SOURCE" "FavSort/" \
+ && ../acrc "FavSort/$SOURCE" > build-id.txt \
+ && rm -f FavSort/.??* \
  && tar czf - "$TARGET.sh" "FavSort" "Imgs/$TARGET.png" | base64 -w 72 >> "Installer.sh" \
  && mv "Installer.sh" "Install FavSort.sh" \
  && zip -r ../FavSort.zip "Readme.md" "Install FavSort.sh" "build-id.txt" \

@@ -1,0 +1,19 @@
+---
+favorites:
+  entry: ++ sort Favorites ++
+  file: /mnt/data/misc/.favorite
+  version: Version=1
+arcade:
+  csv: /mnt/vendor/bin/arcade-plus.csv
+  emu:
+  - ATOMISWAVE
+  - CPS1
+  - CPS2
+  - CPS3
+  - FBNEO
+  - HBMAME
+  - MAME
+  - NAOMI
+  - NEOGEO
+  - PGM2
+  - VARCADE

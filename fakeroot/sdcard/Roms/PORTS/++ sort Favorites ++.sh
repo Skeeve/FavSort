@@ -1,1 +1,1 @@
-/src/artifacts/favsort.sh
+/src/artifacts/++ sort Favorites ++.sh

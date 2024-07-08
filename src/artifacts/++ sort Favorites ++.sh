@@ -1,3 +1,3 @@
 #!/bin/bash -e
 dir="$(cd "$(dirname "$0")"; pwd)"
-"$dir/favsort" --repair
+"$dir/FavSort/favsort"

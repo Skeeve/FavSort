@@ -21,11 +21,10 @@ This will link the required directories into the container.
 
 ```shell
 # Inside the container
-cd PORTS
-go build ../cmd/favsort
+cd /mnt/sdcard/Roms/PORTS
+./build
+./run-tests
 ```
-
-This will create the `favsort` binary which is linked to `++ sort Favorites ++`.
 
 ### Packaging
 
@@ -34,7 +33,7 @@ This will create the `favsort` binary which is linked to `++ sort Favorites ++`.
 ./pkg-FavSort
 ```
 
-This will create `FavSort.zip`.
+This will create `FavSort-vXXX.zip`.
 It requires a proper `go.mod` which you should have created in the development container.
 
 ## Credits
@@ -45,3 +44,5 @@ Many thanks to the reddit user [AnonymousTokenus](https://www.reddit.com/user/An
 - beta-testing
 - helping me figuring out the meaning of the fields in the favorites file
 - and for challenging my programming skills
+
+Also many thanks to discord user @ rymsar for finding a critical bug just in time before I wanted to publish FavSort.

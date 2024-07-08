@@ -1,1 +1,8 @@
-../++ sort Favorites ++.sh
+#!/bin/bash -e
+sortEntry='++ sort Favorites ++'
+dir="$(cd "$(dirname "$0")"; pwd)"
+favdir="$( dirname "$dir" )"
+ports="$( dirname "$favdir" )"
+
+"$favdir/favsort" --remove
+rm -rf "$ports/Imgs/$sortEntry.png" "$ports/$sortEntry.sh" "$favdir"

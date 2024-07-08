@@ -6,6 +6,12 @@ I'm pretty confident it will run as well on the "Plus" and "SP", but couldn't te
 
 For more information please check the [Readme packaged with the binary](src/artifacts/Readme.md).
 
+## Installation
+
+Full installation instructions can be found in the [Readme packaged with the binary](src/artifacts/Readme.md).
+
+Download [the binary](https://github.com/Skeeve/FavSort/releases/download/v0.2/FavSort-0.2.zip) and unzip it.
+
 ## Contributing
 
 To get a development enviroment, `docker-compose.yaml` is provided.

@@ -57,8 +57,10 @@ Under `Roms/PORTS/FavSort` you will find a few helpers which you can invoke from
   This will fix a manually edited `.favorites` file.
   It is required after making changes to `.favorites` using, for example, `File Manager`'s text editor.
   See also [Repair broken Favorites / modify Favorites](#repair)
-- install \
+- append \
   This will just append `++ sort Favorites ++` to your favorites list without sorting it.
+- remove \
+  This will just remove `++ sort Favorites ++` from your favorites list without sorting it.
 - uninstall/uninstall \
   **Note:** This utility is located in the `uninstall` directory to avoid running it by mistake.
   It will completely remove FavSort from your device.
